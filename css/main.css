@@ -1,3 +1,14 @@
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+
 :root {
   --blue: #0075ff;
   --blue-sec: #0d69d5;
@@ -120,16 +131,38 @@ ul {
   background-size: cover;
   transition: 0.6s;
 }
-.landing-page header {
+ header .container{
   border-bottom: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.692);
 }
-.landing-page nav a {
+header nav a {
+  width: 100%;
   color: white;
   transition: 0.3s;
 }
-.landing-page nav a:is(:hover, .active) {
+header nav li:hover {
+  background-color: #222;
+}
+header nav a:is(:hover, .active) {
   color: var(--main-color);
 }
+header nav.show-nav ul{
+  left: 0;
+  top: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  z-index: 1000;
+  background-color: #000;
+}
+header nav.show-nav ul li{
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
 /* end header  */
 /* end landing page  */
 /* begin about us section  */

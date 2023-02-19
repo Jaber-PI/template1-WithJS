@@ -1,8 +1,22 @@
+// begin header styling with headroom 
+let myElement = document.querySelector("header");
+// construct an instance of Headroom, passing the element
+let headroom  = new Headroom(myElement);
+// initialise
+headroom.init();
+
 // settings pannel opened when clicking on icon
 let settingsPannel = document.querySelector(".settings");
 document.querySelector(".settings .icon").addEventListener("click", (e) => {
   settingsPannel.classList.toggle("opened");
 });
+
+// ***************** toggle menu  ************
+let toggleMenu = document.querySelector("header .toggle-menu");
+toggleMenu.onclick = (e) => {
+    e.target.parentElement.parentElement.classList.toggle("show-nav");
+}
+
 
 // *************** begin main color changer *************
 // main color

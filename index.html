@@ -17,6 +17,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
     />
+    <!-- headroom -->
+    <script src="https://unpkg.com/headroom.js"></script>
   </head>
   <body>
     <!-- start settings pannel   -->
@@ -67,8 +69,8 @@
     <!-- end settings pannel   -->
 
     <!-- Start Nav Bullets -->
-    <div class="nav-bullets  ">
-      <ul class=" flex-column ">
+    <div class="nav-bullets">
+      <ul class="flex-column">
         <li class="nav-link p-1">
           <a href="#about"><span>About</span></a>
         </li>
@@ -91,44 +93,49 @@
     </div>
     <!-- End Nav Bullets -->
 
+
     <!-- strat landing page  -->
     <div class="landing-page position-relative">
+          <!-- start header  -->
+    <header class="position-fixed z-index-top w-100 color-white " id="header">
+      <div class="container flex-between px-2 position-relative">
+        <div class="logo"><h2>Essaber</h2></div>
+        <nav class="nav-bar ">
+          <a href="#" class="toggle-menu d-block d-sm-none p-1 py-3">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+          <ul class="d-none d-sm-flex">
+            <li class="nav-link ">
+              <a class="d-block p-1 py-3" href="#about"><span>About</span></a>
+            </li>
+            <li class="nav-link ">
+              <a class="d-block p-1 py-3" href="#skills"><span>Skills</span></a>
+            </li>
+            <li class="nav-link ">
+              <a class="d-block p-1 py-3" href="#gallery"><span>Gallery</span></a>
+            </li>
+            <li class="nav-link ">
+              <a class="d-block p-1 py-3" href="#timeline"><span>Timeline</span></a>
+            </li>
+            <li class="nav-link ">
+              <a class="d-block p-1 py-3" href="#features"><span>Features</span></a>
+            </li>
+            <li class="nav-link ">
+              <a class="d-block p-1 py-3" href="#testimonials"><span>Testimonials</span></a>
+            </li>
+          </ul>
+          
+        </nav>
+      </div>
+    </header>
+    <!-- end header  -->
+
       <div
         class="wraper bg-black position-absolute top-left-0 w-100 h-100 z-index-1"
       ></div>
       <div
         class="container position-relative z-index-2 px-2 h-100 d-flex flex-column"
       >
-        <!-- start header  -->
-        <header class="flex-between color-white py-2" id="header">
-          <div class="logo"><h2>Essaber</h2></div>
-          <nav class="nav-bar">
-            <ul class="d-none d-sm-flex">
-              <li class="nav-link p-1">
-                <a href="#about"><span>About</span></a>
-              </li>
-              <li class="nav-link p-1">
-                <a href="#skills"><span>Skills</span></a>
-              </li>
-              <li class="nav-link p-1">
-                <a href="#gallery"><span>Gallery</span></a>
-              </li>
-              <li class="nav-link p-1">
-                <a href="#timeline"><span>Timeline</span></a>
-              </li>
-              <li class="nav-link p-1">
-                <a href="#features"><span>Features</span></a>
-              </li>
-              <li class="nav-link p-1">
-                <a href="#testimonials"><span>Testimonials</span></a>
-              </li>
-            </ul>
-            <a href="#" class="toggle-menu d-block d-sm-none">
-              <i class="fa-solid fa-bars"></i>
-            </a>
-          </nav>
-        </header>
-        <!-- end header  -->
         <!-- begin land-page content  -->
         <div class="content flex-1 flex-center text-center color-white">
           <div>
@@ -330,7 +337,7 @@
       <div class="container d-grid-300 gap-1 p-2 text-center">
         <div class="feat-box p-2">
           <img class="mw-100" src="imgs/programming.svg" alt="" />
-          <h4 class="position-relative mb-4 mt-2 ">Development</h4>
+          <h4 class="position-relative mb-4 mt-2">Development</h4>
           <p>
             We are professional marketeers, we will do anything you imagine in
             no time.
@@ -338,7 +345,7 @@
         </div>
         <div class="feat-box p-2">
           <img class="mw-100" src="imgs/advertising.svg" alt="" />
-          <h4 class="position-relative mb-4 mt-2 ">Marketing</h4>
+          <h4 class="position-relative mb-4 mt-2">Marketing</h4>
           <p>
             We are professional marketeers, we will do anything you imagine in
             no time.
@@ -346,7 +353,7 @@
         </div>
         <div class="feat-box p-2">
           <img class="mw-100" src="imgs/hosting-icon.svg" alt="" />
-          <h4 class="position-relative mb-4 mt-2 ">Hosting</h4>
+          <h4 class="position-relative mb-4 mt-2">Hosting</h4>
           <p>
             We are professional marketeers, we will do anything you imagine in
             no time.
@@ -354,7 +361,7 @@
         </div>
         <div class="feat-box p-2">
           <img class="mw-100" src="imgs/mobile-app.svg" alt="" />
-          <h4 class="position-relative mb-4 mt-2 ">Mobile Develope</h4>
+          <h4 class="position-relative mb-4 mt-2">Mobile Develope</h4>
           <p>
             We are professional marketeers, we will do anything you imagine in
             no time.
@@ -362,7 +369,7 @@
         </div>
         <div class="feat-box p-2">
           <img class="mw-100" src="imgs/graphic-design.svg" alt="" />
-          <h4 class="position-relative mb-4 mt-2 ">Cloud and Servers</h4>
+          <h4 class="position-relative mb-4 mt-2">Cloud and Servers</h4>
           <p>
             We are professional marketeers, we will do anything you imagine in
             no time.
@@ -370,7 +377,7 @@
         </div>
         <div class="feat-box p-2">
           <img class="mw-100" src="imgs/web-design.svg" alt="" />
-          <h4 class="position-relative mb-4 mt-2 ">Seo</h4>
+          <h4 class="position-relative mb-4 mt-2">Seo</h4>
           <p>
             We are professional marketeers, we will do anything you imagine in
             no time.
@@ -386,12 +393,16 @@
       <h2 class="color-white text-center fs-5 mb-4 mt-2">Testimonials</h2>
       <div class="container flex-column flex-sm-row gap-1 text-center p-2">
         <div class="ts-box position-relative bg-white p-2 b-rad-6">
-          <p class="mb-2 lh-1 color-grey  main-border p-1">
+          <p class="mb-2 lh-1 color-grey main-border p-1">
             Iam very happy with the product its amazing and i recieve it very
             fast and the price was amazing.
           </p>
           <div class="person-info flex-column flex-sm-row flex-center">
-            <img class="b-rad-50 m-1" src="https://placehold.it/80/DDD" alt="" />
+            <img
+              class="b-rad-50 m-1"
+              src="https://placehold.it/80/DDD"
+              alt=""
+            />
             <div>
               <h4 class="mb-2">Ahmed Mosaad</h4>
               <p class="color-grey">CEO At Company</p>
@@ -403,8 +414,12 @@
             Iam very happy with the product its amazing and i recieve it very
             fast and the price was amazing.
           </p>
-          <div  class="person-info flex-column flex-sm-row flex-center gap-1">
-            <img class="b-rad-50 m-1" src="https://placehold.it/80/EEE" alt="" />
+          <div class="person-info flex-column flex-sm-row flex-center gap-1">
+            <img
+              class="b-rad-50 m-1"
+              src="https://placehold.it/80/EEE"
+              alt=""
+            />
             <div>
               <h4 class="mb-2">Ahmed Mosaad</h4>
               <p>CEO At Company</p>
@@ -416,8 +431,12 @@
             Iam very happy with the product its amazing and i recieve it very
             fast and the price was amazing.
           </p>
-          <div  class="person-info flex-column flex-sm-row flex-center gap-1">
-            <img class="b-rad-50 m-1" src="https://placehold.it/80/AAA" alt="" />
+          <div class="person-info flex-column flex-sm-row flex-center gap-1">
+            <img
+              class="b-rad-50 m-1"
+              src="https://placehold.it/80/AAA"
+              alt=""
+            />
             <div>
               <h4 class="mb-2">Ahmed Mosaad</h4>
               <p>CEO At Company</p>
@@ -431,18 +450,49 @@
     <!-- Start Contact Us -->
     <div class="contact py-6 position-relative" id="contact">
       <div class="overlay position-absolute top-left-0 w-100 h-100"></div>
-      <div class="container text-center ">
+      <div class="container text-center">
         <h2 class="color-main fs-5 mb-4 mt-2">Contact Us</h2>
-        <form class="contact-form flex-column flex-sm-row  w-70 m-auto" action="">
-          <div class="left flex-column flex-1 gap-1 p-1  fs-2">
-            <input class="p-1 main-border" type="text" placeholder="Your Name" name="username">
-            <input class="p-1 main-border" type="text" placeholder="Your Phone" name="phone">
-            <input class="p-1 main-border" type="email" placeholder="Your Email" name="email">
-            <input class="p-1 main-border" type="text" placeholder="Subject" name="subject">
+        <form
+          class="contact-form flex-column flex-sm-row w-70 m-auto"
+          action=""
+        >
+          <div class="left flex-column flex-1 gap-1 p-1 fs-2">
+            <input
+              class="p-1 main-border"
+              type="text"
+              placeholder="Your Name"
+              name="username"
+            />
+            <input
+              class="p-1 main-border"
+              type="text"
+              placeholder="Your Phone"
+              name="phone"
+            />
+            <input
+              class="p-1 main-border"
+              type="email"
+              placeholder="Your Email"
+              name="email"
+            />
+            <input
+              class="p-1 main-border"
+              type="text"
+              placeholder="Subject"
+              name="subject"
+            />
           </div>
           <div class="right flex-1 flex-column gap-1 p-1">
-            <textarea class="flex-1 p-1 main-border fs-2" name="message" placeholder="Your Message"></textarea>
-            <input class="main-btn w-fit align-start " type="submit" value="Send">
+            <textarea
+              class="flex-1 p-1 main-border fs-2"
+              name="message"
+              placeholder="Your Message"
+            ></textarea>
+            <input
+              class="main-btn w-fit align-start"
+              type="submit"
+              value="Send"
+            />
           </div>
         </form>
       </div>
@@ -450,7 +500,9 @@
     <!-- End Contact Us -->
 
     <!-- Start Footer -->
-    <footer class="footer text-center p-2 color-white bg-black">Created With Love By Jaber-PI</footer>
+    <footer class="footer text-center p-2 color-white bg-black">
+      Created With Love By Jaber-PI
+    </footer>
     <!-- End Footer -->
 
     <script src="js/main.js"></script>
