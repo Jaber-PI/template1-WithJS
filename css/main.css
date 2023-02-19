@@ -22,6 +22,10 @@ body {
   font-family: "Open Sans", sans-serif;
   min-height: 2000px;
 }
+html,
+body {
+  scroll-padding-top: 65px; /* set to the height of your header */
+}
 *:focus {
   outline: none;
 }
@@ -156,7 +160,7 @@ ul {
 /* End Gallery  */
 
 /* begin timeline  */
-.timeline::before {
+.timeline .container::before {
   content: "";
   position: absolute;
   width: 4px;
@@ -196,6 +200,36 @@ ul {
   border-color: transparent white transparent transparent;
   left: 0;
 }
+
+@media (max-width: 767px) {
+  .timeline .container::before {
+    left: 90%;
+  }
+  .timeline .timeline-content > div:not(.year) {
+    width: 90%;
+    align-self: flex-start;
+  }
+  .timeline .timeline-content > div.year {
+    margin-left: 90%;
+    transform: translateX(-50%);
+  }
+  .timeline .timeline-content > div:is(.left, .right)::before {
+    top: 15%;
+    left: auto;
+    right: calc(-0.5rem - 7px);
+  }
+  .timeline .timeline-content > div.right {
+    padding-left: 0;
+    padding-right: 2rem;
+  }
+  .timeline .timeline-content > div:is(.left, .right)::after {
+    border-color: transparent transparent transparent white;
+    right: 0;
+    left: auto;
+  }
+}
+
+/* end timeline  */
 .testimonials {
   background: linear-gradient(to right, var(--main-color) 50%, black 50%);
 }
